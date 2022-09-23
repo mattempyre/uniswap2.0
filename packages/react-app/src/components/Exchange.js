@@ -43,11 +43,11 @@ const Exchange = ({ pools }) => {
         <button
           disabled={!'canApprove'}
           onClick={() => {}}
-          className={
+          className={`${
             'canApprove'
               ? 'bg-site-pink text-white'
-              : 'bg-site-dim2 text-site-dim2'`${styles.actionButton}`
-          }
+              : 'bg-site-dim2 text-site-dim2'
+          }${styles.actionButton}`}
         >
           {isApproving ? 'Approving...' : 'Approve'}
         </button>
@@ -55,11 +55,11 @@ const Exchange = ({ pools }) => {
         <button
           disabled={!'canSwap'}
           onClick={() => {}}
-          className={
-            'canSwap'
+          className={`${
+            'canApprove'
               ? 'bg-site-pink text-white'
-              : 'bg-site-dim2 text-site-dim2'`${styles.actionButton}`
-          }
+              : 'bg-site-dim2 text-site-dim2'
+          }${styles.actionButton}`}
         >
           {isSwapping
             ? 'Swapping...'
